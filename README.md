@@ -12,6 +12,13 @@ You need to have an AWS subscription, an NGINX+ license, and an NGINX Management
 ### AWS programmatic access
 You will need to have the AWS CLI installed and configured with your AWS credentials. You can find more information on how to do that [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html).
 
+```
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+aws configure
+```
+
 ### Licensing
 You will need to save your *nginx-repo.crt* and *nginx-repo.key* in the base folder of this project. Also, you will need to base64 encode your NMS license file and save it to *nms-license-b64.txt* in the base folder of this project. If you're using an NMS evaluation license, you can copy `nginx-instance-manager-eval.lic` to the base folder of this project, then run the following command to create the base64 encoded file that the module expects:
 ```shell
