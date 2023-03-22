@@ -1,0 +1,6 @@
+region              = "<your aws region name>"
+owner_name          = "<your owner name>"
+owner_email         = "<your owner email address>"
+key_name            = "<your existing AWS ssh key name>"
+tailscale_auth_key  = "<your tailscale auth key>"
+nms_admin_password  = "<your password for the NMS admin account>"
